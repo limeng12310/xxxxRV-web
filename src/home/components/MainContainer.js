@@ -2,7 +2,7 @@ import { Component } from 'react';
 
 class MainContainer extends Component {
   render() {
-    const a = 'dfsdfsdf df';
+    const a = 'demo';
     return (
       <div>
         {a}

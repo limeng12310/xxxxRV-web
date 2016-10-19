@@ -24,8 +24,7 @@ gulp.task('server', function () {
 gulp.task('lint', function() {
   return gulp.src(
     [
-      './src/**/*.js',
-      '!node_modules/**/*',
+      './src/**/*.js'
     ])
     .pipe(eslint())
     .pipe(eslint.format())
