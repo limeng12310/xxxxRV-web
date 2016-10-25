@@ -41,6 +41,7 @@
     "react": "^15.3.2",
     "react-bootstrap": "^0.30.5",
     "react-dom": "^15.3.2",
+    "react-image-gallery": "^0.7.3",
     "whatwg-fetch": "^1.0.0"
   }
 }
