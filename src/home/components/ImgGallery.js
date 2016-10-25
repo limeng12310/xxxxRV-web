@@ -1,8 +1,8 @@
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/build/image-gallery.css';
 import './css/ImgGallery.css';
-import bannerTwo from './img/bannerOne.png';
 import bannerOne from './img/bannerTwo.png';
+import bannerTwo from './img/bannerOne.png';
 
 class ImgGallery extends React.Component {
   constructor(props) {
