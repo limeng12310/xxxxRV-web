@@ -27,6 +27,36 @@ module.exports = {
       filename: 'home.html',
       chunks: ['home']
     }),
+    new HtmlWebpackPlugin({
+      title: '关于我们',
+      template: 'src/aboutUs/index.ejs',
+      filename: 'aboutUs.html',
+      chunks: ['aboutUs']
+    }),
+    new HtmlWebpackPlugin({
+      title: '加入我们',
+      template: 'src/joinUs/index.ejs',
+      filename: 'joinUs.html',
+      chunks: ['joinUs']
+    }),
+    new HtmlWebpackPlugin({
+      title: '索真健康',
+      template: 'src/health/index.ejs',
+      filename: 'health.html',
+      chunks: ['health']
+    }),
+    new HtmlWebpackPlugin({
+      title: '新闻',
+      template: 'src/news/index.ejs',
+      filename: 'news.html',
+      chunks: ['news']
+    }),
+    new HtmlWebpackPlugin({
+      title: '新闻详情',
+      template: 'src/details/index.ejs',
+      filename: 'details.html',
+      chunks: ['details']
+    }),
     new webpack.ProvidePlugin({
       React: 'react'
     }),
@@ -38,6 +68,10 @@ module.exports = {
         test: /\.js$/,
         loaders: ['babel'],
         include: path.join(__dirname, '../src')
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)/,
+        loader: 'url-loader?limit=8192'
       }
     ]
   }
