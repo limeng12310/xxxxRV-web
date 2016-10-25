@@ -2,6 +2,7 @@ stages:
   - default
 
 before_script:
+  # test for ci
   # unique hash of required dependencies
   - PACKAGE_HASH=($(md5sum package.json))
   # path to cache file
