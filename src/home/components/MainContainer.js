@@ -20,7 +20,8 @@ class MainContainer extends React.Component {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 30,
-        fontColor: '#666666'
+        fontColor: '#666666',
+        paddingBottom: 40
       },
       horizontalLine: {
         height: 2,
@@ -40,6 +41,9 @@ class MainContainer extends React.Component {
                 <div style={style.horizontalLine}></div>
                 <span>我们能做什么？</span>
                 <div style={style.horizontalLine}></div>
+              </div>
+              <div>
+                天方创新是以基因检测与数据分析技术创新提供健康服务的公司，以协和医院与
               </div>
             </div>
             <div></div>
