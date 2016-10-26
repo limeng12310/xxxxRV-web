@@ -4,76 +4,77 @@ import telFooter from './img/telFooter.png';
 import join from './img/join.png';
 import wechat from './img/wechat.png';
 
+const style = {
+  boxOut: {
+    width: '100%',
+    height: 230
+  },
+  boxUp: {
+    width: '100%',
+    height: 200,
+    backgroundColor: '#525c5e'
+  },
+  boxUpCenter: {
+    width: 1200,
+    height: 112,
+    margin: '0 auto',
+    padding: '46px 0 42px 0',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start'
+  },
+  title: {
+    fontSize: 20,
+    color: '#b2b6b7',
+    marginBottom: 20
+  },
+  imgMessage: {
+    fontSize: 14,
+    color: '#84898a',
+    marginTop: 12
+  },
+  img: {
+    marginRight: 10
+  },
+  messages: {
+    fontSize: 14,
+    color: '#84898a',
+    paddingTop: 7
+  },
+  message: {
+    marginRight: 23
+  },
+  wechat: {
+    marginLeft: 36
+  },
+  boxWechat: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start'
+  },
+  verticalLine: {
+    height: 112,
+    width: 2,
+    borderRight: '1px solid #82898b'
+  },
+  boxBottom: {
+    width: '100%',
+    height: 30,
+    backgroundColor: '#40484a'
+  },
+  boxBottomCenter: {
+    width: 1200,
+    height: 30,
+    margin: '0 auto',
+    textAlign: 'center',
+    lineHeight: '30px',
+    fontSize: 12,
+    color: '#828789'
+  }
+};
+
 class Footer extends React.Component {
   render() {
-    const style = {
-      boxOut: {
-        width: '100%',
-        height: 230
-      },
-      boxUp: {
-        width: '100%',
-        height: 200,
-        backgroundColor: '#525c5e'
-      },
-      boxUpCenter: {
-        width: 1200,
-        height: 112,
-        margin: '0 auto',
-        padding: '46px 0 42px 0',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'flex-start'
-      },
-      title: {
-        fontSize: 20,
-        color: '#b2b6b7',
-        marginBottom: 20
-      },
-      imgMessage: {
-        fontSize: 14,
-        color: '#84898a',
-        marginTop: 12
-      },
-      img: {
-        marginRight: 10
-      },
-      messages: {
-        fontSize: 14,
-        color: '#84898a',
-        paddingTop: 7
-      },
-      message: {
-        marginRight: 23
-      },
-      wechat: {
-        marginLeft: 36
-      },
-      boxWechat: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'flex-start'
-      },
-      verticalLine: {
-        height: 112,
-        width: 2,
-        borderRight: '1px solid #82898b'
-      },
-      boxBottom: {
-        width: '100%',
-        height: 30,
-        backgroundColor: '#40484a'
-      },
-      boxBottomCenter: {
-        width: 1200,
-        height: 30,
-        margin: '0 auto',
-        textAlign: 'center',
-        lineHeight: '30px',
-        fontSize: 12,
-        color: '#828789'
-      }
-    };
     return (
       <div style={style.boxOut}>
         <div style={style.boxUp}>
