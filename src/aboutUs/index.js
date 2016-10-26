@@ -9,7 +9,7 @@ ReactDOM.render(
 );
 
 if (module.hot) {
-  module.hot.accept(['./components/MainContainer', './components/Slider'], () => {
+  module.hot.accept(['./components/MainContainer'], () => {
     // If you use Webpack 2 in ES modules mode, you can
     // use <App /> here rather than require() a <NextApp />.
     const NextMainContainer = require('./components/MainContainer').default;
