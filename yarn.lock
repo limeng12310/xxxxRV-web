@@ -4030,7 +4030,11 @@ prr@~0.0.0:
   version "0.0.0"
   resolved "http://registry.npm.taobao.org/prr/download/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
 
+<<<<<<< HEAD
 punycode@^1.2.4, punycode@^1.4.1:
+=======
+punycode@^1.2.4:
+>>>>>>> origin/dev
   version "1.4.1"
   resolved "http://registry.npm.taobao.org/punycode/download/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 

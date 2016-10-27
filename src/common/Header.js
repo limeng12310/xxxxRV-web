@@ -1,6 +1,45 @@
 import logo from './img/LOGO.png';
 import tel from './img/tel.png';
 
+const style = {
+  boxOut: {
+    width: '100%',
+    height: 80
+  },
+  boxCenter: {
+    width: 1200,
+    height: 80,
+    margin: '0 auto',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  logo: {
+    width: 174,
+    height: 50,
+    marginLeft: 0,
+    background: `url(${logo})`
+  },
+  tabs: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  tab: {
+    height: 64,
+    fontSize: 20,
+    color: '#666666',
+    marginRight: 42,
+    borderBottom: '2px solid #fff',
+    paddingTop: 20,
+    textDecoration: 'none'
+  },
+  tel: {
+    fontSize: 20,
+    color: '#666666',
+    marginLeft: 16
+  }
+};
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -17,45 +56,6 @@ class Header extends React.Component {
     });
   }
   render() {
-    const style = {
-      boxOut: {
-        width: '100%',
-        height: 80
-      },
-      boxCenter: {
-        width: 1200,
-        height: 80,
-        margin: '0 auto',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-      },
-      logo: {
-        width: 174,
-        height: 50,
-        marginLeft: 0,
-        background: `url(${logo})`
-      },
-      tabs: {
-        display: 'flex',
-        alignItems: 'center'
-      },
-      tab: {
-        height: 41,
-        fontSize: 20,
-        color: '#666666',
-        marginRight: 42,
-        marginBottom: 7,
-        borderBottom: '2px solid #fff',
-        paddingTop: 32
-      },
-      tel: {
-        fontSize: 20,
-        color: '#666666',
-        marginLeft: 16
-      }
-    };
-
     return (
       <div style={style.boxOut}>
         <div style={style.boxCenter}>
