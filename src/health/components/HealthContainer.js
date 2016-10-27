@@ -11,7 +11,7 @@ import icon3 from '../image/icon-3.png';
 import icon4 from '../image/icon-4.png';
 import banner2 from '../image/banner-2.png';
 
-const HealthContainerStyle = {
+const JoinContainerStyle = {
   container: {
     background: '#f2f2f2'
   },
@@ -51,41 +51,41 @@ const HealthContainerStyle = {
     fontSize: '24px'
   }
 };
-class HealthContainer extends Component {
+class JoinContainer extends Component {
   render() {
     return (
-      <div style={HealthContainerStyle.container}>
+      <div style={JoinContainerStyle.container}>
         <Header />
         <div>
-          <img src={banner1} alt="" style={HealthContainerStyle.img} />
+          <img src={banner1} alt="" style={JoinContainerStyle.img} />
         </div>
-        <div style={HealthContainerStyle.main}>
-          <p style={HealthContainerStyle.title}>———— 索真基因一站式创新基因检测及解读 ————</p>
-          <div style={HealthContainerStyle.iconBox}>
-            <dl style={HealthContainerStyle.item}>
+        <div style={JoinContainerStyle.main}>
+          <p style={JoinContainerStyle.title}>———— 索真基因一站式创新基因检测及解读 ————</p>
+          <div style={JoinContainerStyle.iconBox}>
+            <dl style={JoinContainerStyle.item}>
               <dt><img src={icon1} alt="" /></dt>
-              <dd style={HealthContainerStyle.tag}>专业</dd>
-              <dd style={HealthContainerStyle.describe}>依据权威数据库及最新临床研究结果进行解读，与临床医生共同进行指导</dd>
+              <dd style={JoinContainerStyle.tag}>专业</dd>
+              <dd style={JoinContainerStyle.describe}>依据权威数据库及最新临床研究结果进行解读，与临床医生共同进行指导</dd>
             </dl>
-            <dl style={HealthContainerStyle.item}>
+            <dl style={JoinContainerStyle.item}>
               <dt><img src={icon2} alt="" /></dt>
-              <dd style={HealthContainerStyle.tag}>便捷</dd>
-              <dd style={HealthContainerStyle.describe}>从取样到出具体报告仅一周</dd>
+              <dd style={JoinContainerStyle.tag}>便捷</dd>
+              <dd style={JoinContainerStyle.describe}>从取样到出具体报告仅一周</dd>
             </dl>
-            <dl style={HealthContainerStyle.item}>
+            <dl style={JoinContainerStyle.item}>
               <dt><img src={icon3} alt="" /></dt>
-              <dd style={HealthContainerStyle.tag}>准确</dd>
-              <dd style={HealthContainerStyle.describe}>闭管检测，含内外控，排除假阴性、假阳性反应</dd>
+              <dd style={JoinContainerStyle.tag}>准确</dd>
+              <dd style={JoinContainerStyle.describe}>闭管检测，含内外控，排除假阴性、假阳性反应</dd>
             </dl>
-            <dl style={HealthContainerStyle.item}>
+            <dl style={JoinContainerStyle.item}>
               <dt><img src={icon4} alt="" /></dt>
-              <dd style={HealthContainerStyle.tag}>灵敏</dd>
-              <dd style={HealthContainerStyle.describe}>可准确检测低至1%的突变</dd>
+              <dd style={JoinContainerStyle.tag}>灵敏</dd>
+              <dd style={JoinContainerStyle.describe}>可准确检测低至1%的突变</dd>
             </dl>
           </div>
         </div>
         <div>
-          <img src={banner2} alt="" style={HealthContainerStyle.img} />
+          <img src={banner2} alt="" style={JoinContainerStyle.img} />
         </div>
         <Footer />
       </div>
@@ -93,4 +93,4 @@ class HealthContainer extends Component {
   }
 }
 
-export default HealthContainer;
+export default JoinContainer;
