@@ -29,14 +29,15 @@ const style = {
     fontSize: 20,
     color: '#666666',
     marginRight: 42,
-    borderBottom: '2px solid #fff',
+    border: 'none',
     paddingTop: 20,
     textDecoration: 'none'
   },
   tel: {
     fontSize: 20,
     color: '#666666',
-    marginLeft: 16
+    marginLeft: 16,
+    textDecoration: 'none'
   }
 };
 
