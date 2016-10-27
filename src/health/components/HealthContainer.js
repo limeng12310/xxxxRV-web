@@ -21,12 +21,20 @@ const HealthContainerStyle = {
     margin: '0 auto'
   },
   title: {
-    textAlign: 'center',
     fontSize: '28px',
     height: '128px',
     lineHeight: '128px',
     color: '#666',
-    marginBottom: '60px'
+    marginBottom: '60px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  horizontalLine: {
+    height: 2,
+    width: 64,
+    borderTop: '2px solid #666666',
+    margin: '0 25px'
   },
   iconBox: {
     width: '100%',
@@ -60,7 +68,11 @@ class HealthContainer extends Component {
           <img src={banner1} alt="" style={HealthContainerStyle.img} />
         </div>
         <div style={HealthContainerStyle.main}>
-          <p style={HealthContainerStyle.title}>———— 索真基因一站式创新基因检测及解读 ————</p>
+          <p style={HealthContainerStyle.title}>
+            <div style={HealthContainerStyle.horizontalLine}></div>
+            <span>索真基因一站式创新基因检测及解读</span>
+            <div style={HealthContainerStyle.horizontalLine}></div>
+          </p>
           <div style={HealthContainerStyle.iconBox}>
             <dl style={HealthContainerStyle.item}>
               <dt><img src={icon1} alt="" /></dt>
