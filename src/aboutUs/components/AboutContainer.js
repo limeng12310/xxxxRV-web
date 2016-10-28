@@ -75,7 +75,7 @@ class AboutContainer extends Component {
   render() {
     return (
       <div style={AboutContainerStyle.container}>
-        <Header />
+        <Header isChoosen={3} />
         <div>
           <img src={banner} alt="" style={AboutContainerStyle.img} />
         </div>

@@ -44,7 +44,7 @@ const style = {
   },
   introduction: {
     fontSize: 16,
-    'line-height': '30px'
+    lineHeight: '30px'
   },
   foot: {
     marginTop: 84
@@ -56,7 +56,7 @@ class MainContainer extends Component {
     return (
       <div>
         <div style={style.head}>
-          <Header />
+          <Header isChoosen={0} />
         </div>
         <div style={style.centerBox}>
           <div style={style.news}><span style={style.circle}></span>新闻动态</div>

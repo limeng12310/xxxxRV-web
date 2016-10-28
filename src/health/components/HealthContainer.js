@@ -63,7 +63,7 @@ class HealthContainer extends Component {
   render() {
     return (
       <div style={HealthContainerStyle.container}>
-        <Header />
+        <Header isChoosen={1} />
         <div>
           <img src={banner1} alt="" style={HealthContainerStyle.img} />
         </div>

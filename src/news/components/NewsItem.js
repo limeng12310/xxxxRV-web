@@ -47,7 +47,7 @@ class NewsItem extends React.Component {
       <dl style={NewsItemStyle.box}>
         <dt><img src={NewItemPic} alt="" /></dt>
         <dd style={NewsItemStyle.content}>
-          <h3 style={NewsItemStyle.title}>天方创新与莎莉医询进行商业合作</h3>
+          <a href="details.html" style={NewsItemStyle.title}>天方创新与莎莉医询进行商业合作</a>
           <div>
             <span style={NewsItemStyle.time}>2016-9-12</span>
             <span style={NewsItemStyle.author}>作者：天方创新</span>
