@@ -38,23 +38,17 @@ const style = {
     color: '#666666',
     marginLeft: 16,
     textDecoration: 'none'
+  },
+  telImg: {
+    verticalAlign: 'text-top'
   }
 };
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.changeTab = this.changeTab.bind(this);
-    this.state = {
-      isChoosen: 0
-    };
     this.tabs = ['首页', '天方优质创新', '莎莉医询', '关于我们'];
-    this.href = [];
-  }
-  changeTab(e) {
-    this.setState({
-      isChoosen: parseInt(e.target.getAttribute('data-index'), 10)
-    });
+    this.href = ['home.html', 'health.html', 'http://www.sl-yx.com/', 'aboutUs.html'];
   }
   render() {
     return (
@@ -65,7 +59,7 @@ class Header extends React.Component {
             {
               this.tabs.map((tab, i) => {
                 let isChoosenStyle = {};
-                if (i === this.state.isChoosen) {
+                if (i === this.props.isChoosen) {
                   isChoosenStyle = {
                     color: '#3fa47c',
                     borderBottom: '2px solid #3fa47c'
@@ -74,22 +68,22 @@ class Header extends React.Component {
                 return (
                   <a
                     href={this.href[i]}
-                    data-index={i}
                     style={Object.assign({}, style.tab, isChoosenStyle)}
-                    onClick={this.changeTab}
                   >
                     {tab}
                   </a>
                 );
               })
             }
-            <a style={style.tel}><img src={tel} alt="tel"></img>150-1001-1813</a>
+            <a style={style.tel}><img src={tel} alt="tel" style={style.telImg} />150-1001-1813</a>
           </div>
         </div>
       </div>
     );
   }
 }
-
+Header.propTypes = {
+  isChoosen: React.PropTypes.number
+};
 
 export default Header;

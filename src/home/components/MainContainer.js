@@ -99,7 +99,7 @@ const style = {
     width: 290,
     fontSize: 16,
     color: '#666666',
-    'line-height': '26px',
+    lineHeight: '26px',
     margin: '25px 35px 0 35px'
   },
   news: {
@@ -151,21 +151,10 @@ const style = {
 };
 
 class MainContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      more: false
-    };
-  }
-  newsMore = () => {
-    this.setState({
-      more: !this.state.more
-    });
-  };
   render() {
     return (
       <div>
-        <Header />
+        <Header isChoosen={0} />
         <ImgGallery />
         <div style={style.boxOut}>
           <div style={style.boxCenter}>
@@ -180,10 +169,10 @@ class MainContainer extends React.Component {
                 为核心，利用大数据分析和机器学习技术，以此为基础开展基因检测、精准医疗、云健康管理等健康服务。
               </div>
               <div style={style.circles}>
-                <img style={style.circle} src={data} alt="data"></img>
-                <img style={style.circle} src={gene} alt="gene"></img>
-                <img style={style.circle} src={cloud} alt="cloud"></img>
-                <img style={style.circle} src={medical} alt="health"></img>
+                <img style={style.circle} src={data} alt="data" />
+                <img style={style.circle} src={gene} alt="gene" />
+                <img style={style.circle} src={cloud} alt="cloud" />
+                <img style={style.circle} src={medical} alt="health" />
               </div>
             </div>
             <div style={style.advantage}>
@@ -227,7 +216,7 @@ class MainContainer extends React.Component {
               </div>
               <div style={style.newsBox}>
                 <div style={style.newsDetail}>
-                  <img style={style.newsImg} src={news} alt="news"></img>
+                  <img style={style.newsImg} src={news} alt="news" />
                   <div>
                     <div style={style.newsTitle}>天方创新与莎莉医询进行商业合作</div>
                     <div style={style.newsTime}>2016-9-12 作者：天方创新</div>
@@ -237,7 +226,7 @@ class MainContainer extends React.Component {
                   </div>
                 </div>
                 <div style={style.newsDetail}>
-                  <img style={style.newsImg} src={news} alt="news"></img>
+                  <img style={style.newsImg} src={news} alt="news" />
                   <div>
                     <div style={style.newsTitle}>天方创新与莎莉医询进行商业合作</div>
                     <div style={style.newsTime}>2016-9-12 作者：天方创新</div>
@@ -247,21 +236,7 @@ class MainContainer extends React.Component {
                   </div>
                 </div>
               </div>
-              <div style={this.state.more ? style.newsBoxShow : style.newsBoxHidden}>
-                <div style={style.newsBox}>
-                  <div style={style.newsDetail}>
-                    <img style={style.newsImg} src={news} alt="news"></img>
-                    <div>
-                      <div style={style.newsTitle}>天方创新与莎莉医询进行商业合作</div>
-                      <div style={style.newsTime}>2016-9-12 作者：天方创新</div>
-                      <div style={style.newsContent}>莎莉健康管理（北京）有限公司与天方创新（北京）信息技术有限公司，
-                        于2016年9月8日11:00在北京西黄寺签订TERMSHEET协议。
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style={style.more} onClick={this.newsMore}>{this.state.more ? '收起' : '查看更多'}</div>
+              <a style={style.more} href="news.html" >查看更多</a>
             </div>
           </div>
         </div>

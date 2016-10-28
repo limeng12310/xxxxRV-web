@@ -42,7 +42,8 @@ const style = {
     paddingTop: 7
   },
   message: {
-    marginRight: 23
+    marginRight: 23,
+    color: '#84898a'
   },
   wechat: {
     marginLeft: 36
@@ -82,36 +83,40 @@ class Footer extends React.Component {
             <div>
               <div style={style.title}>天方创新（北京）信息技术有限公司</div>
               <div style={style.imgMessage}>
-                <img src={adress} style={style.img} alt="adress"></img>
+                <img src={adress} style={style.img} alt="adress" />
                 北京市海淀区大柳树路17号福海大厦1207
               </div>
               <div style={style.imgMessage}>
-                <img src={message} style={style.img} alt="message"></img>
+                <img src={message} style={style.img} alt="message" />
                 xxxxx@lifebankonline.com
               </div>
               <div style={style.imgMessage}>
-                <img src={telFooter} style={style.img} alt="tel"></img>
+                <img src={telFooter} style={style.img} alt="tel" />
                 15-1001-1803 工作日9:00-18:00
               </div>
             </div>
             <div style={style.verticalLine}></div>
             <div>
               <div style={style.title}>数据服务健康 用爱发现生命之美</div>
-              <div style={style.imgMessage}><img src={join} style={style.img} alt="join"></img>加入天方</div>
+              <div>
+                <a href="joinUs.html" style={style.imgMessage}>
+                  <img src={join} style={style.img} alt="join" />加入天方
+                </a>
+              </div>
             </div>
             <div style={style.verticalLine}></div>
             <div>
               <div style={style.title}>友情链接</div>
               <div style={style.messages}>
-                <span style={style.message}>莎莉医询</span>
-                <span style={style.message}>索真医学</span>
-                <span style={style.message}>索真医学</span>
+                <a href="http://www.sl-yx.com/" style={style.message}>莎莉医询</a>
+                <a href="http://thorgene.com/" style={style.message}>索真医学</a>
+                <a href="http://thorgene.com/" style={style.message}>索真医学</a>
               </div>
             </div>
             <div style={style.verticalLine}></div>
             <div style={style.boxWechat}>
               <div style={style.title}>关注我们</div>
-              <div style={style.wechat}><img src={wechat} alt="wechat"></img></div>
+              <div style={style.wechat}><img src={wechat} alt="wechat" /></div>
             </div>
           </div>
         </div>

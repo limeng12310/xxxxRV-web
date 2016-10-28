@@ -39,7 +39,7 @@ class NewsContainer extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header isChoosen={0} />
         <div>
           <img src={Banner} alt="" style={NewsContainerStyle.img} />
         </div>
