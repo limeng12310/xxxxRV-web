@@ -20,12 +20,6 @@ class ImgGallery extends React.Component {
     this.images = [bannerOne, bannerTwo, bannerOne, bannerTwo];
   }
 
-  // onSlide = (index) => {
-  //   this.setState({
-  //     selected: index
-  //   });
-  // };
-
   render() {
     const style = {
       imgGallery: {
@@ -46,8 +40,6 @@ class ImgGallery extends React.Component {
             ref={i => this._imageGallery = i}  // eslint-disable-line
             items={imageItems}
             lazyLoad={false}
-            // onSlide={this.onSlide}
-            // startIndex={this.state.selected}
             infinite={this.state.infinite}
             showBullets={this.state.showBullets}
             showThumbnails={this.state.showThumbnails}
