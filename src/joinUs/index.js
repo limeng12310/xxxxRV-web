@@ -1,22 +1,22 @@
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import MainContainer from './components/MainContainer';
+import JoinContainer from './components/JoinContainer';
 
 ReactDOM.render(
   <AppContainer>
-    <MainContainer />
+    <JoinContainer />
   </AppContainer>,
   document.getElementById('approot')
 );
 
 if (module.hot) {
-  module.hot.accept(['./components/MainContainer'], () => {
+  module.hot.accept(['./components/JoinContainer'], () => {
     // If you use Webpack 2 in ES modules mode, you can
     // use <App /> here rather than require() a <NextApp />.
-    const NextMainContainer = require('./components/MainContainer').default;
+    const NextJoinContainer = require('./components/JoinContainer').default;
     ReactDOM.render(
       <AppContainer>
-        <NextMainContainer />
+        <NextJoinContainer />
       </AppContainer>,
       document.getElementById('approot')
     );
